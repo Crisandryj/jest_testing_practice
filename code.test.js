@@ -40,3 +40,14 @@ test("cipher letters", () => {
 test("cipher capital letters", () => {
   expect(caesarCipher("Hellz!", 1)).toBe("Ifmma!");
 });
+
+test("Get average, min, max and length from array", () => {
+  expect(
+    analyzeArray([1, 8, 3, 4, 2, 6]).toBe({
+      average: 4,
+      min: 1,
+      max: 8,
+      length: 6,
+    })
+  );
+});
