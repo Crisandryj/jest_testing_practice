@@ -65,4 +65,29 @@ const caesarCipher = function caesarCipher(string, n) {
   return newString;
 };
 
-module.exports = { sum, upCase, reverseString, calculator, caesarCipher };
+const analyzeArray = function analyzeArray(array) {
+  let object = {
+    average: 0,
+    min: 0,
+    max: 0,
+    length: 0,
+  };
+  //get sum and divide by length
+  object.average =
+    array.reduce((accumulator, currentValue) => accumulator + currentValue) /
+    array.length;
+  object.length = array.length;
+  object.min = Math.min(...array);
+  object.max = Math.max(...array);
+
+  return object;
+};
+
+module.exports = {
+  sum,
+  upCase,
+  reverseString,
+  calculator,
+  caesarCipher,
+  analyzeArray,
+};
