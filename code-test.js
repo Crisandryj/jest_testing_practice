@@ -61,7 +61,6 @@ const caesarCipher = function caesarCipher(string, n) {
         break;
     }
   });
-
   return newString;
 };
 
